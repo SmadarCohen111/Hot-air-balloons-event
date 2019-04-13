@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Event Regstration Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bodystyle">
+    <header>
+        <h1>Hot Air Balloons Festival</h1>
+        <p>25-30 in july</p>
+    </header>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- 
+                    i.	the event name
+                    ii.	text description
+                    iii.	picture(s)
+                    iv.	date
+                    v.	in a unordered list - event agenda
+                    vi.	google maps (using iframe)
+                    vii.	logos to social network sites that will act as link to the event page on the social network.
+                    viii.	table - description of shuttle arrivals options
+                    1.	name, address, hours 
+                -->
+
+            <div class="col-sm-8">
+                <h3>About</h3>
+                <p>The hot air balloons Festival is going to be the biggest festival ever seen.</p>
+                <p>The festival takes place in Metz, France, on 25-30 July</p>
+                <p>and there will be more then 600 balloons flying in beautiful French skies.</p>
+                <p>if you planned to go to french on july, that's something that you will not want to miss</p>
+                <p>this festival is cross country's, people all over the world come to join and see it</p>
+
+                <div class="row align-items-center ">
+                    <div class="col-md-6 imagescss">
+                        <img src="./images/photo 1.jpg" class="img-fluid1 " alt="img-fluid1">
+                    </div>
+                    <div class="col-md-6 imagescss">
+                        <img src="./images/photo 3.jpg" class="img-fluid2" alt="img-fluid2">
+                    </div>
+                </div>
+
+                <p>25-30 in july</p>
+                <h4>country's:</h4>
+                <ul>
+                    <li>Netherlands</li>
+                    <li>Israel</li>
+                    <li>USA</li>
+                </ul>
+
+                <div class="iframestyle">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"></iframe>
+                </div>
+
+                <div class="row align-items-center ">
+                    <!-- Add font awesome icons -->
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+                <table class="tablestyle">
+                    <tr>
+                        <th>name</th>
+                        <th>address</th>
+                        <th>hours</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>2900 University Blvd, Ames, IA 50010 </td>
+                        <td>11:00 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Sderot</td>
+                        <td>12:00 PM</td>
+                    </tr>
+                </table>
+
+            </div>
+
+
+
+            <div class="col-sm-4">
+
+                <!-- form user info -->
+                <div class="card centercard">
+                    <div class="card-header registretionstyle ">
+                        <h4 class="mb-0">Registration Form</h4>
+                    </div>
+                    <div class="card-body registretionstyle">
+                        <form class="form" role="form" autocomplete="off">
+                            <div class="form-group row">
+                                <label class="col-lg-5 col-form-label form-control-label">full name</label>
+                                <div class="col-lg-7">
+                                    <input class="form-control" type="text" value="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-5 col-form-label form-control-label">phone</label>
+                                <div class="col-lg-7">
+                                    <input class="form-control" type="text" value="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-5 col-form-label form-control-label">Email</label>
+                                <div class="col-lg-7">
+                                    <input class="form-control" type="email" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-lg-5 col-form-label form-control-label">Guests</label>
+                                <div class="col-lg-7">
+                                    <input class="form-control" type="number" value="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-5 col-form-label form-control-label">Arrival Method</label>
+                                <div class="col-lg-7">
+                                    <select id="user_time_zone" class="form-control" size="0">
+                                        <option value="-1">select </option>
+                                        <option value="independently">independently</option>
+                                        <option value="shuttle">by shuttle</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="form_message">Message *</label>
+                                    <textarea id="form_message" name="message" class="form-control"
+                                        placeholder="Message for me *" rows="4" required="required"
+                                        data-error="send a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-4 col-form-label form-control-label"></label>
+                                <div class="col-lg-8">
+                                    <input type="button" class="btn btn-primary" value="Register">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- /form user info -->
+
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Contact information: <a href="mailto:someone@example.com">
+                someone@example.com</a>.</p>
+                <p> 
+                    <a href="https://github.com/smadar422" > all right reserved Smadar Cohen and Dror kessler</a>
+                </p> 
+    </footer>
+</body>
+
+</html>
